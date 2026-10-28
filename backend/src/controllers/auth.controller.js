@@ -121,6 +121,12 @@ async function loginUserController(req, res) {
   }
 }
 
+
+/**
+ * @name loginUserController
+ * @description login a user, expects email and password in the request body
+ * @access Public
+ */
 async function logoutUserController(req, res) {
   try {
     const token = req.cookies.token;
